@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Aibek Makhkambaev: engineer, educator and builder of open digital public services in Central Asia.">
+  <title>Aibek Makhkambaev | Engineer, Educator, Digital Public Services</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxYjJhMmYiLz48dGV4dCB4PSIzMiIgeT0iNDMiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLHNlcmlmIiBmb250LXNpemU9IjMwIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjZTBhNTI2Ij5BTTwvdGV4dD48L3N2Zz4K" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+  <style>:root {
+  --ink: #1b2a2f; --paper: #f7f8f5; --teal: #0f6b6b; --gold: #e0a526; --mist: #e3ecea;
+  --serif: "Newsreader", Georgia, serif; --sans: "Public Sans", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+body { margin: 0; font-family: var(--sans); font-size: 1.05rem; line-height: 1.65; color: var(--ink); background: var(--paper); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--serif); line-height: 1.2; }
+h1 { font-size: clamp(2.6rem, 8vw, 4.8rem); margin: .2em 0; }
+h2 { font-size: 2rem; margin-top: 0; padding-bottom: .3rem; border-bottom: 3px solid var(--gold); display: inline-block; }
+h3 { font-size: 1.4rem; } h4 { font-size: 1.1rem; margin: .5rem 0 0; } h5 { margin: 0; font-size: 1rem; } h6 { margin: 0; font-size: 1.1rem; }
+a { color: var(--teal); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+img { max-width: 100%; height: auto; }
+
+header { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; padding: .6rem 1.5rem; background: var(--ink); }
+.brand { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; color: #fff; text-decoration: none; }
+.menu { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 0; padding: 0; list-style: none; }
+.menu a { color: #fff; text-decoration: none; padding: .2rem 0; border-bottom: 2px solid transparent; }
+.menu a:hover { border-bottom-color: var(--gold); }
+
+main { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+section { padding: 3rem 0 1rem; }
+.hero { padding-top: 4.5rem; }
+.kicker { display: inline-block; padding: .2rem .8rem; background: var(--mist); border-left: 4px solid var(--teal); }
+.lead { max-width: 40rem; font-family: var(--serif); font-size: 1.5rem; }
+hr { border: 0; border-top: 1px solid #b9c7c4; margin: 2rem 0 0; }
+
+.portrait { float: left; margin: 0 1.8rem 1rem 0; width: 220px; }
+.portrait img { display: block; border: 4px solid var(--teal); border-radius: 50%; }
+figcaption { margin-top: .4rem; font-size: .85rem; text-align: center; }
+.clear { clear: both; }
+
+.timeline { padding-left: 1.4rem; } .timeline li { margin-bottom: .6rem; padding-left: .4rem; }
+.note { position: relative; margin-top: 1.5rem; padding: 1rem 1.2rem 1rem 1.6rem; background: var(--mist); border: 1px solid #b9c7c4; }
+.note::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--gold); }
+.note p { margin: .2rem 0 0; }
+abbr { text-decoration: underline dotted; cursor: help; }
+
+table { width: 100%; border-collapse: collapse; background: #fff; }
+caption { text-align: left; font-weight: 600; padding-bottom: .4rem; }
+th, td { padding: .7rem .9rem; border: 1px solid #b9c7c4; text-align: left; }
+thead th { background: var(--teal); color: #fff; }
+tbody tr:nth-child(even) { background: var(--mist); }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.5rem; }
+article { padding: 1.2rem; background: #fff; border: 1px solid #b9c7c4; border-top: 5px solid var(--teal); }
+article h3 { margin-top: 0; }
+summary { cursor: pointer; font-weight: 600; color: var(--teal); }
+mark { background: var(--gold); padding: 0 .25rem; }
+dt { font-weight: 600; margin-top: .6rem; } dd { margin-left: 1.2rem; }
+blockquote { margin: 1.5rem 0; padding: .5rem 1.2rem; border-left: 5px solid var(--gold); font-family: var(--serif); font-size: 1.2rem; }
+blockquote footer { background: none; color: inherit; padding: 0; font-size: .95rem; }
+meter, progress { width: min(18rem, 100%); height: 1.1rem; vertical-align: middle; margin-left: .5rem; }
+
+form { max-width: 34rem; margin-top: 1rem; }
+label { display: block; font-weight: 600; margin-bottom: .2rem; }
+fieldset label, p > label:has(input[type=checkbox]) { display: inline-block; font-weight: 400; margin-right: 1rem; }
+input[type=text], input[type=email], select, textarea { width: 100%; padding: .6rem; font: inherit; border: 1px solid #6f8581; border-radius: 4px; background: #fff; }
+fieldset { margin: 0 0 1rem; border: 1px solid #b9c7c4; }
+button { padding: .7rem 1.6rem; font: inherit; font-weight: 600; color: #fff; background: var(--teal); border: 0; border-radius: 4px; cursor: pointer; }
+button:hover { background: var(--ink); }
+address { font-style: normal; margin-bottom: 1rem; }
+
+body > footer { margin-top: 4rem; padding: 2rem 1.5rem; text-align: center; color: #fff; background: var(--ink); }
+body > footer a { color: var(--gold); }
+
+@media (max-width: 600px) {
+  header { justify-content: center; }
+  .menu { justify-content: center; gap: .8rem; font-size: .95rem; }
+  .portrait { float: none; margin: 0 auto 1.5rem; }
+  th, td { padding: .5rem; font-size: .92rem; }
+  .lead { font-size: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<header id="top">
+  <a class="brand" href="#top">A. Makhkambaev</a>
+  <nav aria-label="Main">
+    <ul class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">Retiring in 2066 after 38 years in public technology</p>
+    <h1>Aibek Makhkambaev</h1>
+    <p class="lead">Software engineer, university teacher and builder of open digital services that Kazakhstan&rsquo;s citizens use every day.</p>
+    <hr>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <figure class="portrait">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMjAgMjIwIj48cmVjdCB3aWR0aD0iMjIwIiBoZWlnaHQ9IjIyMCIgZmlsbD0iI2UzZWNlYSIvPjxwYXRoIGQ9Ik0zMCAyMjBjNC01MCA0MC03MCA4MC03MHM3NiAyMCA4MCA3MHoiIGZpbGw9IiMxYjJhMmYiLz48cGF0aCBkPSJNOTUgMTUwbDE1IDMwIDE1LTMweiIgZmlsbD0iI2Y3ZjhmNSIvPjxyZWN0IHg9Ijk4IiB5PSIxMjUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIzMCIgZmlsbD0iI2Q5YTc3ZSIvPjxlbGxpcHNlIGN4PSIxMTAiIGN5PSI5NSIgcng9IjM4IiByeT0iNDYiIGZpbGw9IiNlMmI0OGMiLz48cGF0aCBkPSJNNzIgOTBjLTQtNDAgMjAtNTYgNDAtNTZzNDQgMTYgMzggNTZjLTYtMjItMTgtMzAtMzgtMzBzLTM0IDgtNDAgMzB6IiBmaWxsPSIjYWViN2I1Ii8+PGNpcmNsZSBjeD0iOTYiIGN5PSI5OCIgcj0iNCIgZmlsbD0iIzFiMmEyZiIvPjxjaXJjbGUgY3g9IjEyNCIgY3k9Ijk4IiByPSI0IiBmaWxsPSIjMWIyYTJmIi8+PHBhdGggZD0iTTk2IDEyMHExNCAxMCAyOCAwIiBzdHJva2U9IiMxYjJhMmYiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPjwvc3ZnPgo=" alt="Portrait illustration of Aibek Makhkambaev, a grey-haired man in a navy jacket" width="220" height="220">
+      <figcaption>Aibek, age 60, at the 2066 farewell lecture.</figcaption>
+    </figure>
+    <p>I grew up in Almaty and wrote my first web page as a first-year student. Since then I have worked on one question: <em>how can technology make public services simpler and fairer?</em></p>
+    <p>I led the national open-data platform, taught more than <strong>3,000 students</strong>, and now mentor young engineers.<br>
+    My motto is short: <q>Build it open, build it clear.</q></p>
+    <p>Born <time datetime="2006-03-14">14 March 2006</time> &middot; Almaty, Kazakhstan.</p>
+    <div class="clear"></div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ol class="timeline">
+      <li><strong>PhD in Computer Science</strong>, 2036. Thesis on privacy-preserving public data.</li>
+      <li><strong>MSc in Information Systems</strong>, 2030. Graduated with distinction.</li>
+      <li><strong>BSc in Information and Communication Technologies</strong>, 2028. Final project: a campus accessibility map.</li>
+    </ol>
+    <aside class="note"><h5>Lifelong learning</h5><p>Certified in <abbr title="Artificial Intelligence">AI</abbr> ethics (2045) and cyber security (2052).</p></aside>
+  </section>
+
+  <section id="career">
+    <h2>Career</h2>
+    <table>
+      <caption>Career milestones</caption>
+      <thead><tr><th scope="col">Years</th><th scope="col">Role</th><th scope="col">Organisation</th></tr></thead>
+      <tbody>
+        <tr><td>2028&ndash;2035</td><td>Software Engineer</td><td>Almaty Digital Lab</td></tr>
+        <tr><td>2035&ndash;2046</td><td>Lead Architect</td><td>Open Data Kazakhstan</td></tr>
+        <tr><td>2046&ndash;2058</td><td>Chief Technology Officer</td><td>National e-Services Agency</td></tr>
+        <tr><td>2058&ndash;2066</td><td>Professor of ICT</td><td>Almaty Technical University</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="projects">
+    <h2>Projects and achievements</h2>
+    <div class="cards">
+      <article>
+        <h3>OpenSteppe Platform</h3>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48cmVjdCB3aWR0aD0iMzIwIiBoZWlnaHQ9IjE4MCIgZmlsbD0iIzFiMmEyZiIvPjxwYXRoIGQ9Ik0zMCA5NWw0MC0zMCA2MC0xMiA1MCAxMCA2MC0xOCA0MCAyNC0yMCAzMCAyMCAyOC03MCAxOC02MC04LTUwIDE0LTQwLTI2eiIgZmlsbD0iIzBmNmI2YiIvPjxnIGZpbGw9IiNlMGE1MjYiPjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9IjYiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSI3NSIgcj0iNiIvPjxjaXJjbGUgY3g9IjIxNSIgY3k9IjEwNSIgcj0iNiIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjEyNSIgcj0iNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjcwIiByPSI2Ii8+PC9nPjwvc3ZnPgo=" alt="Map of Kazakhstan with glowing data points" width="320" height="180">
+        <p>An open-data portal serving 12 million citizens. Public offices publish data once and everyone can reuse it.</p>
+        <details>
+          <summary>Project details</summary>
+          <h4>Results</h4>
+          <p>Service queues fell by <mark>45%</mark> in three years. <small>Figures are fictional.</small></p>
+        </details>
+      </article>
+      <article>
+        <h3>Digital Skills for All</h3>
+        <p>A free course for rural teachers, completed in 14 regions.</p>
+        <details>
+          <summary>Project details</summary>
+          <h4>Results</h4>
+          <p>9,500 teachers trained; <cite>UNESCO Central Asia</cite> featured the programme in 2054.</p>
+        </details>
+      </article>
+    </div>
+    <h3>Awards</h3>
+    <dl>
+      <dt>State Prize for Innovation (2049)</dt><dd>For the open-data platform.</dd>
+      <dt>Teacher of the Year (2062)</dt><dd>Voted by students of Almaty Technical University.</dd>
+    </dl>
+    <blockquote>
+      <p>Aibek taught us that a good system is one a grandmother can use without help.</p>
+      <footer>&mdash; <cite>Dana S., former student</cite></footer>
+    </blockquote>
+    <h3>Interests</h3>
+    <ul>
+      <li>Mountain hiking in the Trans-Ili Alatau</li>
+      <li>Chess and the dombra</li>
+      <li>Volunteering at a coding club for teenagers</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><label for="s1">Software architecture</label> <meter id="s1" min="0" max="100" value="95">95%</meter></p>
+    <p><label for="s2">Public speaking</label> <meter id="s2" min="0" max="100" value="85">85%</meter></p>
+    <p><label for="s3">Mentoring (goal: 100 mentees)</label> <progress id="s3" max="100" value="82">82%</progress></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <address>Almaty, Kazakhstan<br><a href="mailto:hello@example.com">hello@example.com</a> (placeholder address)</address>
+    <form action="#" method="post">
+      <p><label for="name">Full name</label><input type="text" id="name" name="name" placeholder="Your name" required></p>
+      <p><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com" required></p>
+      <p><label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option>Mentoring</option><option>Speaking</option><option>Collaboration</option>
+        </select></p>
+      <fieldset>
+        <legend>Preferred reply</legend>
+        <label><input type="radio" name="reply" value="email" checked> Email</label>
+        <label><input type="radio" name="reply" value="call"> Phone call</label>
+      </fieldset>
+      <p><label for="msg">Message</label><textarea id="msg" name="msg" rows="4" placeholder="How can I help?"></textarea></p>
+      <p><label><input type="checkbox" name="news"> Send me the yearly newsletter</label></p>
+      <button type="submit">Send message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h6>Aibek Makhkambaev</h6>
+  <p>&copy; 2066 Aibek Makhkambaev. A fictional future portfolio for Laboratory Work 11. <a href="#top">Back to top</a></p>
+</footer>
+</body>
+</html>
